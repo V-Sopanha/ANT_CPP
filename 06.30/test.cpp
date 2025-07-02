@@ -68,13 +68,14 @@ int main(){
     //     cout<<"\n";
     // }
 
-    for (int i = 1; i <=4; i++){
-        for (int o = i; o <= 4 ; o++){
-            cout <<"  ";
-        }
-        cout << "+ - + -";
-        cout<<"\n";
-    }
+    // for (int i = 1; i <=4; i++){
+    //     for (int o = i; o <= 4 ; o++){
+    //         cout <<"  ";
+    //     }
+    //     cout << "+ - + -";
+    //     cout<<"\n";
+    // }
+
 
     return 0;
 }
