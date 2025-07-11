@@ -6,7 +6,7 @@ string name;
 
 void input();
 void output(int id, string name, int math, int khmer, int english);
-char grade(float math, float khmer, float english);
+char grade(int math, int khmer, int english);
 
 int main(){
 
