@@ -80,7 +80,6 @@ void inputStudentInfo(string &name, string &id, string &gender, int &age, float 
     cout << "\n\t\t Enter English Score: "; cin >> english;      cin.clear(); cin.ignore();
 }
 
-
 void showStudentInfo(string name, string id, string gender, int age, float math, float khmer, float english){
     cout << "\n\t ----- Student Information -----\n ";
     cout << "\n\t\t Name   : " << name;
