@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 void inputStudentInfo(string &name, string &id, string &gender, int &age, float &math, float &khmer, float &english);
