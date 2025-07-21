@@ -31,6 +31,7 @@ int main(){
             cout << "\n\t||     1. Input Student Info       ||\n";
             cout << "\n\t====================================\n";
             inputStudentInfo(name, id, gender, age, math, khmer, english);
+            break;
         }
         case 2:{
             cout << "\n\t====================================\n";
