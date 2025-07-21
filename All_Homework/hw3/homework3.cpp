@@ -102,14 +102,19 @@ float getAverage(float math, float khmer, float english){
 
 char getGrade(float avg)
 {
-    if (avg >= 90)
+    if (avg >= 90){
         return 'A';
-    else if (avg >= 80)
+    }
+    else if (avg >= 80){
         return 'B';
-    else if (avg >= 70)
+    }
+    else if (avg >= 70){
         return 'C';
-    else if (avg >= 60)
+    }
+    else if (avg >= 60){
         return 'D';
-    else
+    }
+    else{
         return 'F';
+    }
 }
