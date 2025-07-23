@@ -12,12 +12,14 @@ int main() {
     float salary[n];
 
     while (true) {
+        cout << "\n\n\t\t ==========================";
         cout << "\n\n\t\t [1]. Input Data";
         cout << "\n\n\t\t [2]. Output Data";
         cout << "\n\n\t\t [3]. Search Data";
         cout << "\n\n\t\t [4]. Update Data";
         cout << "\n\n\t\t [5]. Delete Data";
         cout << "\n\n\t\t [6]. Exit";
+        cout << "\n\n\t\t ==========================";
         cout << "\n\n\t\t Enter Option  : ";
         cin >> op; cin.ignore();cin.clear();
 
@@ -40,19 +42,19 @@ int main() {
             }
             case 3: {
                 string search;
-                cout << "\n\n\t\t Enter Name to Search  : ";
-                getline(cin, search);
-
-                bool found = false;
+                cout << "\n\n\t\t Enter Name to Search  : ";getline(cin, search);
+                bool message = false;
                 for (int i = 0; i < n; i++) {
                     if (search == name[i]) {
                         cout << "\n\n\t\t " << left << setw(20) << "Name" << setw(15) << "School" << "Salary";
                         cout << "\n\n\t\t " << left << setw(20) << name[i] << setw(15) << school[i] << salary[i];
-                        found = true;
+                        message = true;
                         break;
                     }
                 }
-                if (!found) {
+                if (message == true){
+                    cout<<("\n\n\t\t Search successfully !!!");
+                }else{
                     cout << "\n\n\t\t Name not found!";
                 }
                 break;
@@ -61,18 +63,22 @@ int main() {
 
                 string update;
                 cout << "\n\n\t\t Enter Name to Update  : "; getline(cin, update);
-                cout << "\n\n\t\t " << left << setw(20) << "Name" << setw(15) << "School" << "Salary";
+                bool message = false;
                 for(int i = 0; i<n; i++){
                     if(update == name[i]){
-
-
+                        cout << "\n\n\t\t " << left << setw(20) << "Name" << setw(15) << "School" << "Salary";
                         cout << "\n\n\t\t [" << i + 1 << "]. Input Data Teacher";
                         cout << "\n\n\t\t Enter Name  : ";  getline(cin, name[i]);
                         cout << "\n\n\t\t Enter School  : ";    getline(cin, school[i]);
                         cout << "\n\n\t\t Enter Salary  : ";cin >> salary[i];cin.ignore();
-
+                        message = true;
                         break;
                     }
+                }
+                if (message == true){
+                    cout<<("\n\n\t\t Update successfully !!!");
+                }else{
+                    cout << "\n\n\t\t Name not found!";
                 }
                 break;
             }
@@ -100,7 +106,7 @@ int main() {
                 break;
             }
             case 6: {
-                cout<<"Exit";
+                cout<<"\n\n\t\t Exit";
                 return 0;
             }
             default: {
