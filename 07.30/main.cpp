@@ -6,7 +6,7 @@ using namespace std;
 class MyClass{
     public:
         string name;
-    int id;
+        int id;
 
     void Input(){
         cout<<"Enter Name  : "; getline(cin,name);
@@ -18,9 +18,12 @@ class MyClass{
     }
 };
 
-MyClass obj[3], obj2;
+// MyClass obj[3], obj2;
 
 int main(){
+    int n;
+    cout << "Enter Number of n : ";cin >> n; cin.ignore();
+    MyClass obj[n];
 
 
     for(int i=0;i<3;i++){
