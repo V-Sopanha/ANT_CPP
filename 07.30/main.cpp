@@ -1,9 +1,11 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 
 class MyClass{
-    string name;
+    public:
+        string name;
     int id;
 
     void Input(){
@@ -12,15 +14,22 @@ class MyClass{
     }
 
     void Output(){
-        
+        cout<<"\n\n\t\t "<<left<<setw(20)<<id<<name;
     }
-{
-
-}};
+};
 
 MyClass obj[3], obj2;
 
 int main(){
 
 
+    for(int i=0;i<3;i++){
+		obj[i].Input();
+	}
+	
+	for(int i=0;i<3;i++){
+		obj[i].Output();
+	}
+	
+	return 0;
 }
