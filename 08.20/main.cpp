@@ -53,11 +53,11 @@ class Book{
         void Display(){
             cout<<"\n\n\t\t Title is  : "<< getTitle();
             cout<<"\n\n\t\t Author is : "<< getAuthor();
-            cout<<"\n\n\t\t Price is  :$ "<< getPrice();
+            cout<<"\n\n\t\t Price is  : $ "<< getPrice();
             cout<<"\n\n\t\t Year of Published is  : "<< getYear();
             cout<<"\n\n\t\t Genre is     : "<< getGenre();
             cout<<"\n\n\t\t Is Old Book  : "<< (isOldBook() == true ? "Yes" : "No") ;
-            cout<<"\n\n\n";
+            cout<<"\n\n";
         }
 };
 
